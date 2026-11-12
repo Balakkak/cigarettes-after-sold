@@ -84,7 +84,7 @@ Each EP page shows **a step bar and a "next step" box**, so it is always clear w
 | AI | Claude, through the Claude Code app on the Mac (`claude -p`), for reading chats and photos and for the marketing report |
 | Image work | macOS Vision for cutting out the background, plus my own cover and logo scripts |
 | Running | A macOS LaunchAgent keeps it running in the background from login, restarts it within about 10 seconds if it stops, and keeps the Mac awake while it works |
-| Access | On the same Wi-Fi from a phone, or from outside through a Tailscale Funnel link (every page still needs a login) |
+| Access | From a phone on the same Wi-Fi; every page needs a login |
 | Tests | Automated tests for the marketing report, post numbers, file tidy-up and the step-by-step EP pages. Tests run against a copy of the data with Facebook faked, never the real shop data. |
 
 ## 5. Protecting customer data
@@ -93,7 +93,6 @@ Once a tool holds customers' names and addresses, security is part of the design
 
 - **Login for every page**, with users managed from the Mac or the users page.
 - **A PIN lock** in settings.
-- **Host check:** only this Mac, private network addresses and the Tailscale link are served.
 - **Automatic daily backups**, kept for 14 days.
 - Shop data lives outside the project folder, and tests never touch it.
 
